@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <!----encabezado--------------->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gustavo FrontDev</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a> </li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT</a> </li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a> </li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a> </li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a> </li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a> </li>
+                </ul>
+            </nav>
+            <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!----Inicio---------------->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/gus.png" alt="Profile">
+            </div>
+            <h1>Gustavo Morales</h1>
+            <h2>Desarrollador Web JR</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/gustavo-antonio-morales-fagundez-4a1a43229/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/GustavMorales"><i class="fa-brands fa-github"></i></a>
+                <a href="https://t.me/GustavMoralesF"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!----ABOUT----------------->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p>Hola! Soy <SPan>Gustavo Morales</SPan>, programador web Técnico medio en comercio y servicios administrativos, mención informática. Graduado de la
+                Universidad de Caldas(Colombia) bajo el programa Gubernamental Mision TIC 2022 de habilidades en Programación con énfasis en
+                aplicaciones Web</p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombre</strong>
+                            Gustavo Antonio Morales Fagundez
+                        </li>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            06/09/1998
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            morales.fagundez@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Cali, Vale del Cauca, Colombia
+                        </li>
+                        <li>
+                            <strong>Profesión</strong>
+                            Programador Web
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE (Open to Work)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Leer</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Deportes</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Coding</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                            <span>Aprender</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotografia</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+               desca <a href="CurriculumVitae.pdf" download="GustavoCV.pdf"></a><i class="fa-solid fa-download"></i> 
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!----SKILLLS--------------->
+    <section>
+        <div class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span><i class="fa-brands fa-square-js"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso htmlcss">
+                                    <span><i class="fa-brands fa-html5"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>WordPress</span>
+                            <div class="barra-skill">
+                                <div class="progreso ">
+                                    <span><i class="fa-brands fa-wordpress"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Terminal y linea de Comandos</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-terminal"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Visual Studio Code</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-code"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Ingles</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-sharp fa-solid fa-globe"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Profetional Skills</h3>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-walkie-talkie"></i></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-user-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Orientacion a Resultados</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-arrow-trend-up"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Metodologia Ágil</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-arrows-split-up-and-left"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-sharp fa-solid fa-bullseye"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!----Curriculum------------>
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Caldas</span>
+                        <span class="fecha">2021</span>
+                        <p>Bajo el programa Mision TIC 2022 desarrollé programas en diferentes lenguajes de programación como Python, Java, JavaScript,
+                            todo ésto en entornos de desarrollo integrado  como intelliJ IDEA, NetBeans y PyCharm tambien en editores de codigo como Visual Studio Code.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>   
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de caldas</span>
+                        <span class="fecha">2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Temporibus eum animi, perspiciatis sint fugit saepe iure similique,
+                            fuga harum voluptate magni dolorem? Praesentium iure, est laudantium delectus dicta rerum vero.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>   
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de caldas</span>
+                        <span class="fecha">2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Temporibus eum animi, perspiciatis sint fugit saepe iure similique,
+                            fuga harum voluptate magni dolorem? Praesentium iure, est laudantium delectus dicta rerum vero.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>   
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de caldas</span>
+                        <span class="fecha">2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Temporibus eum animi, perspiciatis sint fugit saepe iure similique,
+                            fuga harum voluptate magni dolorem? Praesentium iure, est laudantium delectus dicta rerum vero.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>front development</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Temporibus eum animi, perspiciatis sint fugit saepe iure similique,
+                            fuga harum voluptate magni dolorem? Praesentium iure, est laudantium delectus dicta rerum vero.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>   
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>-------tabajo-------</h4>
+                        <span class="casa">---lugar---</span>
+                        <span class="fecha">2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Temporibus eum animi, perspiciatis sint fugit saepe iure similique,
+                            fuga harum voluptate magni dolorem? Praesentium iure, est laudantium delectus dicta rerum vero.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>   
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de caldas</span>
+                        <span class="fecha">2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Temporibus eum animi, perspiciatis sint fugit saepe iure similique,
+                            fuga harum voluptate magni dolorem? Praesentium iure, est laudantium delectus dicta rerum vero.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>   
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de caldas</span>
+                        <span class="fecha">2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Temporibus eum animi, perspiciatis sint fugit saepe iure similique,
+                            fuga harum voluptate magni dolorem? Praesentium iure, est laudantium delectus dicta rerum vero.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Portfolio------------->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/LinkedIn.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto 1</h3>
+                        <p>Éste Portfolio web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/LinkedIn.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto 2</h3>
+                        <p>Programación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/LinkedIn.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto 3</h3>
+                        <p>Programación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/LinkedIn.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto 4</h3>
+                        <p>Programación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/LinkedIn.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto 5</h3>
+                        <p>Programación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Contacto-------------->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CContacto</h2>
+            <div class="fila">
+                <!--Fomulaio-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Número Telefonico">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-share"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="mapa-ubicación">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-location-dot"></i>
+                                Cali, Valle del Cauca 
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-envelope"></i>
+                                Morales.fagundez@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Footer---------------->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-arrow-up-to-dotted-line">/\</i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/gustavo-antonio-morales-fagundez-4a1a43229/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/GustavMorales"><i class="fa-brands fa-github"></i></a>
+            <a href="https://t.me/GustavMoralesF"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
